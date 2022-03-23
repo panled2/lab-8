@@ -12,7 +12,7 @@ const port = 3000,
     customReadFile = (file, res) => {
         fs.readFile(`./${file}`, (errors, data) => {
             if (errors) {
-                console.log("File does not exist");
+                console.log("Page does not exist");
             }
             res.end(data);
         });

@@ -55,9 +55,9 @@ http.createServer((req, res) => {
             "Content-Type": "text/css"
         });
         customReadFile(`./public/css${url}`, res);
-} else if (url.indexOf(".jpg") !== -1) {
+} else if (url.indexOf(".png") !== -1) {
     res.writeHead(httpStatus.OK, {
-        "Content-Type": "image/jpg"
+        "Content-Type": "image/png"
     });
         customReadFile(`./public/images${url}`, res);
     } else {
