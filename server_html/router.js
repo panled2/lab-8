@@ -62,6 +62,7 @@ http.createServer((req, res) => {
         customReadFile(`./public/images${url}`, res);
     } else {
         customReadFile(`./views/index.html`, res);
+
     }
 })
 .listen(3000);
