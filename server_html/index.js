@@ -18,11 +18,6 @@ const port = 3000,
         });
     };
 
-    router.get("/", (req, res) => {
-        res.writeHead(httpStatusCodes.OK, plaintTextContentType);
-        res.end("INDEX");
-    });
-
     router.get("/index.html", (req, res) => {
         res.writeHead(httpStatusCodes.OK, plaintTextContentType);
         customReadFile("views/index.html", res);

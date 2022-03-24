@@ -88,6 +88,6 @@ const sendErrorResponse = res => {
     res.writeHead(httpStatus.NOT_FOUND, {
         "Content-Type": "text/html"
     });
-    res.write("<h1>File Not Found</h1>");
+    res.write("<h1>URL Not Found</h1>");
     res.end();
 };
